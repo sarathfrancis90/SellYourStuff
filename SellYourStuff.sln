@@ -7,6 +7,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellYourStuff", "SellYourSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SellYourStuff.Tests", "SellYourStuff.Tests\SellYourStuff.Tests.csproj", "{67BAEC5D-0520-41B7-8B20-8543D21632EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{F1938D64-7CC5-4069-89F6-DDA47B17A41C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{9023B7FE-C88F-46AB-BB6C-EF73424876EE}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SellYourStuff-WAWS-dev.json = PublishScripts\Configurations\SellYourStuff-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9023B7FE-C88F-46AB-BB6C-EF73424876EE} = {F1938D64-7CC5-4069-89F6-DDA47B17A41C}
 	EndGlobalSection
 EndGlobal
